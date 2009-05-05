@@ -2,7 +2,6 @@
 // @name           Reddit Content Filter
 // @description    Hide reddit articles by author, domain, or title.
 // @include        http://reddit.com/*
-// @include        http://www.reddit.com/*
 // @include        http://*.reddit.com/*
 // ==/UserScript==
 
@@ -188,7 +187,7 @@
               '(list of comma-separated words):';
 
     // prompt for and save filters
-    if (val = prompt(msg, res[key])) {
+    if ((val = prompt(msg, res[key])) !== null) {
       // show everything that was hidden
       show();
 
