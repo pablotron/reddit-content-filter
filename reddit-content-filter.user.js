@@ -15,7 +15,7 @@
   var names = {
     user: 'Author',
     site: 'Domain',
-    word: 'Title
+    word: 'Title'
   };
 
   /*
@@ -178,7 +178,7 @@
     // enable show button if we hid anything
     if (sum > 0) {
       show_btn.style.display = 'inline';
-      show_btn.innerHTML = 'Show All (' + sum + ')';
+      show_btn.innerHTML = 'Show Hidden (' + sum + ')';
     }
   };
 
@@ -216,6 +216,7 @@
     // create show button
     btn = show_btn = document.createElement('button');
     btn.style.display = 'none';
+    btn.style.fontSize = '9pt';
     btn.innerHTML = 'Show All (0)';
     div.appendChild(btn);
 
@@ -228,12 +229,13 @@
 
     // create edit buttons
     keys.forEach(function(key) {
-      var name = 'Edit ' + names[key] + ' Filters';
+      var name = names[key] + ' Filters';
 
       // create edit button
       btn = document.createElement('button');
       btn.innerHTML = name;
       btn.style.marginLeft = '5px';
+      btn.style.fontSize = '9pt';
 
       // add button click handler
       btn.addEventListener('click', function() { 
