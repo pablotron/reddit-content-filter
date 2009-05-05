@@ -184,7 +184,7 @@
   var edit = function(key) {
     var val, res = get_config(),
         msg = 'Edit ' + names[key] + ' Filters ' + 
-              '(list of comma-separated words):';
+              '(list of comma-separated phrases):';
 
     // prompt for and save filters
     if ((val = prompt(msg, res[key])) !== null) {
