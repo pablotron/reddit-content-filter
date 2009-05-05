@@ -1,0 +1,18 @@
+Reddit Content Filter README
+============================
+
+Greasemonkey script to filter Reddit articles by author, domain, or
+title.
+
+Usage
+=====
+Use the Author, Domain, and Title filter buttons at the top of the page
+to add one or more comma-separated phrases to filter on.
+
+To show the stories that have been hidden by Reddit Content Filter,
+click the "Show Hidden" button.
+
+About the Author
+================
+Paul Duncan <pabs@pablotron.org>
+http://pablotron.org/
